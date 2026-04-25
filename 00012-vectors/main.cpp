@@ -7,4 +7,7 @@ auto main() -> int {
     my_vector.push_back(11);
     my_vector.push_back(13);
     println("my_vector 3rd item is : {}",my_vector[3]);
+
+    // see also 
+    vector vec2 {2,4,6};
 }
