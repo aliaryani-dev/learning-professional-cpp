@@ -10,4 +10,8 @@ auto main() -> int {
     // cpp-style array
     array<int, 3> arr {1,2,3};
     println("size of arr : {}",arr.size());
+
+    // see also 
+    array arr2 {9,8,7};
+    println("size of arr2 : {}",arr2.size());
 }
