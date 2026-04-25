@@ -7,6 +7,7 @@ void my_function (int num, char c) {
 }
 
 int add_numbers (int a, int b) {
+    println("Entering function {}", __func__);
     return a + b;
 }
 
