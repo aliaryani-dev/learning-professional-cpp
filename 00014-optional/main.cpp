@@ -14,6 +14,9 @@ auto main() -> int {
     optional<int> allowed_data {get_data(true)};
     if (allowed_data.has_value()){
         println("data when allowed : {}", allowed_data.value());
+        // see also
+        println("allowed value using dereference : {}",
+        *allowed_data);
     } else {
         println("no value was allowed!");
     }
