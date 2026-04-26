@@ -20,5 +20,11 @@ auto main() -> int {
     } else {
         println("no value was allowed!");
     }
+
+    optional<int> not_allowed_data {get_data(false)};
+    //! This is going to return an exception
+    // println("not allowed data : {}", not_allowed_data.value());
+    println ("data or 0 if it's not allowed : {}"
+        ,not_allowed_data.value_or(0));
     return 0;
 }
