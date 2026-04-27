@@ -1,3 +1,4 @@
+#include <array>
 #include <print>
 using namespace std;
 
@@ -18,6 +19,12 @@ auto main() -> int {
     // `for` loop
     for (int j {0};j < 5;++j) {
         println("j : {}",j);
+    }
+
+    // range-based for loop
+    array arr {1,2,3,4,5,6,7,9,8};
+    for (int k:arr) {
+        println("array item {}",k);
     }
 
     return 0;
