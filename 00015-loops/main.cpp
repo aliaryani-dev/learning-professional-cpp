@@ -27,5 +27,10 @@ auto main() -> int {
         println("array item {}",k);
     }
 
+    // initialiser for range-based for loop 
+    for (array arr2 {'a','b','c'}; char ch:arr2) {
+        println("character in arr2 : {}", ch);
+    }
+
     return 0;
 }
