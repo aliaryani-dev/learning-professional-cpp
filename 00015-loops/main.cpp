@@ -9,5 +9,11 @@ auto main() -> int {
         ++i;
     }
 
+    // `do/while` loop
+    do {
+        println("i : {}",i);
+        --i;
+    } while (i>0);
+
     return 0;
 }
