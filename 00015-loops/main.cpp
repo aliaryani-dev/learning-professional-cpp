@@ -15,5 +15,10 @@ auto main() -> int {
         --i;
     } while (i>0);
 
+    // `for` loop
+    for (int j {0};j < 5;++j) {
+        println("j : {}",j);
+    }
+
     return 0;
 }
