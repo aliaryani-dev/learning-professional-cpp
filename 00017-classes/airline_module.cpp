@@ -1,9 +1,11 @@
 module airline_ticket;
-#include <string>
+import <string>;
 using namespace std;
 
-double AirlineTicket::calculare_price_in_dollars() {
-    if (has_elite_superrewards_status()) {
+AirlineTicket::AirlineTicket() {};
+AirlineTicket::~AirlineTicket() {};
+double AirlineTicket::calculate_price_in_dollars() {
+    if (has_elite_superreward_status()) {
         return 0;
     }
     return get_number_of_miles() * 0.1;
@@ -15,13 +17,13 @@ void AirlineTicket::set_passenger_name(string name) {m_passenger_name = name; }
 int AirlineTicket::get_number_of_miles() {
     return m_number_of_miles;
 }
-void AirlineTicket::set_number_of_miles(intt miles) {
+void AirlineTicket::set_number_of_miles(int miles) {
     m_number_of_miles = miles;
 }
 
-bool AirlineTicket::has_elite_superrewards_status() {
-    return m_has_elite_superrewards_status;
+bool AirlineTicket::has_elite_superreward_status() {
+    return m_has_elite_superreward_status;
 }
-void AirlineTicket::set_has_elite_superrewards_status (bool status) {
-    m_has_elite_superrewards_status = status;
+void AirlineTicket::set_has_elite_superreward_status (bool status) {
+    m_has_elite_superreward_status = status;
 }
