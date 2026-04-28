@@ -19,8 +19,8 @@ export class AirlineTicket {
         bool has_elite_superreward_status();
         void set_elite_superreward_status(bool status);
     private:
-        string m_passenger_name;
-        int m_number_of_miles;
-        bool m_has_elite_superreward_status();
+        string m_passenger_name {"Unknown Passenger"};
+        int m_number_of_miles {0};
+        bool m_has_elite_superreward_status {false};
 };
 
