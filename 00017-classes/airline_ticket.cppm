@@ -1,9 +1,10 @@
 export module airline_ticket;
-#include <string>
+import <string>;
 
 using namespace std;
 
 export class AirlineTicket {
+
     public:
         AirlineTicket();
         ~AirlineTicket();
@@ -17,7 +18,8 @@ export class AirlineTicket {
         void set_number_of_miles(int miles);
 
         bool has_elite_superreward_status();
-        void set_elite_superreward_status(bool status);
+        void set_has_elite_superreward_status(bool status);
+
     private:
         string m_passenger_name {"Unknown Passenger"};
         int m_number_of_miles {0};
