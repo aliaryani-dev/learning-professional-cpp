@@ -25,4 +25,12 @@ namespace Records {
         println("Salary : ${}", get_salary());
         println("");
     }
+
+    // getters and setters
+    void Employee::set_first_name (const string& first_name) {
+        m_first_name = first_name;
+    }
+    const string& Employee::get_first_name () {
+        return m_first_name;
+    }
 }
