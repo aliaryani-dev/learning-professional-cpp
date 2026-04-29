@@ -24,4 +24,11 @@ auto main() -> int {
     ptr_ref = new int;
     *ptr_ref = 5;
     delete ptr_ref; ptr_ref = nullptr;
+
+    // pointer to ref
+    int a {5};
+    int& a_ref {a};
+    int* a_p {&a_ref};
+    *a_p = 100;
+    println("a : {}",a);
 }
