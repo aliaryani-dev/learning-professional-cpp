@@ -29,4 +29,6 @@ export class Employee {
 
         void set_salary (int new_salary);
         int get_salary () const;
+
+        bool is_hired () const;
 }
