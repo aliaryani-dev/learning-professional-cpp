@@ -17,4 +17,11 @@ auto main() -> int {
     //* see also
     // int& unnamed_ref {5}; //! error
     const int& unnamed_ref{5};
+
+    // ref to pointer
+    int* int_p {nullptr};
+    int*& ptr_ref {int_p};
+    ptr_ref = new int;
+    *ptr_ref = 5;
+    delete ptr_ref; ptr_ref = nullptr;
 }
