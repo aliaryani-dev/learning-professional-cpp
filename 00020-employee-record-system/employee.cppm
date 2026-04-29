@@ -15,4 +15,5 @@ export class Employee {
         void demote (int demerit_amount = _default_raise_and_demerit_amount);
         void hire (); // hires or rehires an employee
         void fire (); // dismisses the employee
+        void display() const; // prints employee info to console
 }
