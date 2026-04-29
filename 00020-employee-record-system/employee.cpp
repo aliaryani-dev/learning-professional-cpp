@@ -1,5 +1,6 @@
 module employee;
 import <string>;
+import <print>;
 using namespace std;
 
 namespace Records {
@@ -15,4 +16,13 @@ namespace Records {
 
     void Employee::hire() {m_hired = true;}
     void Employee::fire() {m_hired = false;}
+
+    void Employee::display() const {
+        println("Employee : {}, {}", get_last_name(),get_first_name());
+        println("-----------------------------------");
+        println("{}", (is_hired() ? "Current Employee" : "Former Employee"));
+        println("Employee number : {}", get_employee_number());
+        println("Salary : ${}", get_salary());
+        println("");
+    }
 }
