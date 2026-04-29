@@ -9,4 +9,7 @@ namespace Records {
     void Employee::promote (int raise_amount) {
         set_salary (get_salary() + raise_amount);
     }
+    void Employee::demote (int demerit_amount) {
+        set_salary (get_salary - demerit_amount);
+    }
 }
