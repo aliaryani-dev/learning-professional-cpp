@@ -14,4 +14,7 @@ auto main() -> int {
     int z {3};
     const int& z_ref {z};
     // z_ref = 4; //! error
+    //* see also
+    // int& unnamed_ref {5}; //! error
+    const int& unnamed_ref{5};
 }
