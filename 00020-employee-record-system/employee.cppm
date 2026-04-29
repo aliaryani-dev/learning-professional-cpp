@@ -20,4 +20,7 @@ export class Employee {
         // getters and setters
         void set_first_name (const string& first_name);
         const string& get_first_name () const;
+
+        void set_last_name (const string& last_name);
+        const string& get_last_name () const;
 }
