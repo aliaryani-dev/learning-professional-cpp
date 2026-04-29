@@ -54,4 +54,6 @@ namespace Records {
     int Employee::get_salary () const {
         return m_salary;
     }
+
+    bool Employee::is_hired() const { return m_hired; }
 }
