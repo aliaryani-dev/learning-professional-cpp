@@ -16,4 +16,8 @@ export class Employee {
         void hire (); // hires or rehires an employee
         void fire (); // dismisses the employee
         void display() const; // prints employee info to console
+
+        // getters and setters
+        void set_first_name (const string& first_name);
+        const string& get_first_name () const;
 }
