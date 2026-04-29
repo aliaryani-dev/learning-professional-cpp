@@ -33,4 +33,11 @@ namespace Records {
     const string& Employee::get_first_name () {
         return m_first_name;
     }
+
+    void Employee::set_last_name (const string& last_name) {
+        m_last_name = last_name;
+    }
+    const string& Employee::get_last_name () {
+        return m_last_name;
+    }
 }
