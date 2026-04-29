@@ -48,5 +48,10 @@ namespace Records {
         return m_employee_number;
     }
 
-
+    void Employee::set_salary (int salary) {
+        m_salary = salary;
+    }
+    int Employee::get_salary () const {
+        return m_salary;
+    }
 }
