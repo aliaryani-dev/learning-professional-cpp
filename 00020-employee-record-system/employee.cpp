@@ -40,4 +40,11 @@ namespace Records {
     const string& Employee::get_last_name () {
         return m_last_name;
     }
+
+    void Employee::set_employee_number (int employee_number) {
+        m_employee_number = employee_number;
+    }
+    int Employee::get_employee_number () {
+        return m_employee_number;
+    }
 }
