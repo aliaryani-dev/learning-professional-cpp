@@ -23,4 +23,7 @@ export class Employee {
 
         void set_last_name (const string& last_name);
         const string& get_last_name () const;
+
+        void set_employee_number (int employee_number);
+        int get_employee_number () const;
 }
