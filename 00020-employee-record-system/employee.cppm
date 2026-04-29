@@ -26,4 +26,7 @@ export class Employee {
 
         void set_employee_number (int employee_number);
         int get_employee_number () const;
+
+        void set_salary (int new_salary);
+        int get_salary () const;
 }
