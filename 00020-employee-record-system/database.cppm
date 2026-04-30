@@ -21,5 +21,5 @@ namespace Records {
         private:
             std::vector<Employee> m_employees;
             int m_next_employee_number {_first_employee_number};
-    }
+    };
 }
