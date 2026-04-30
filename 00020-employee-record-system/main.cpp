@@ -57,7 +57,20 @@ int display_menu() {
     println("5) List all current employees");
     println("6) List all former employees");
     println("");
-    println("-----> ");
+    print("-----> ");
     cin >> selection;
     return selection;
+}
+
+void do_hire(Database& db) {
+    string first_name;
+    string last_name;
+    print("First name? --> ");
+    cin >> first_name;
+    print("Last name? --> ");
+    cin >> last_name;
+
+    auto& Employee {db.add_employee (first_name, last_name)};
+    println("Hired employee : {}, {} with employee number : {}",
+            last_name, first_name, employee.get_employee_number());
 }
