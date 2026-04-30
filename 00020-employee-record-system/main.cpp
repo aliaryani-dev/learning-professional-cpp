@@ -90,3 +90,19 @@ void do_fire(Database& db) {
                 exception.what());
     }
 }
+
+void do_promote(Database& db) {
+    int employee_number;
+    print ("Employee number? --> ");
+    cin >> employee_number;
+    int raise_amount;
+    print ("How much of a raise? --> ");
+    cin >> raise_amount;
+
+    try {
+        auto& emp {db.get_employee(employee_number)};
+        emp.promote (raise_amount);
+    } catch (const logic_error& exception) {
+        println(cerr, "Unable to promote : {}",exception.what());
+    }
+}
