@@ -43,4 +43,12 @@ namespace Records {
             }
         }
     }
+
+    void Database::display_former() const {
+        for (const auto& employee : m_employees) {
+            if (!employee.is_hired()) {
+                employee.display();
+            }
+        }
+    }
 }
