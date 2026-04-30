@@ -2,6 +2,7 @@ import database;
 import employee;
 import <print>;
 import <iostream>;
+import <stdexcept>;
 
 using namespace std;
 using namespace Records;
@@ -73,4 +74,19 @@ void do_hire(Database& db) {
     auto& Employee {db.add_employee (first_name, last_name)};
     println("Hired employee : {}, {} with employee number : {}",
             last_name, first_name, employee.get_employee_number());
+}
+
+void do_fire(Database& db) {
+    int employee_number;
+    print ("Employee number? --> ");
+    cin >> employee_number;
+
+    try {
+        auto& emp { db.get_employee(employee_number)};
+        emp.fire();
+        println("Employee {} terminated.", employee_number);
+    } catch (const logic_error& exception) {
+        println(cerr, "Unable to terminate employee : {}",
+                exception.what());
+    }
 }
