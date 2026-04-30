@@ -12,5 +12,9 @@ namespace Records {
             Employee& get_employee (int employee_number);
             Employee& get_employee (const std::string& first_name,
                                     const std::string& last_name);
+            
+            void display_all() const;
+            void display_current() const;
+            void display_former() const;
     }
 }
