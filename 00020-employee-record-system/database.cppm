@@ -1,5 +1,6 @@
 export module database;
 import <string>;
+import <vector>;
 import employee;
 
 namespace Records {
@@ -15,6 +16,10 @@ namespace Records {
             
             void display_all() const;
             void display_current() const;
-            void display_former() const;
+            void display_former() const;\
+
+        private:
+            std::vector<Employee> m_employees;
+            int m_next_employee_number {_first_employee_number};
     }
 }
