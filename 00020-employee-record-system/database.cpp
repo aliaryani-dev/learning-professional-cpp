@@ -1,5 +1,6 @@
 module database;
 import <string>;
+import <stdexcept>;
 
 namespace Records {
     Employee& Database::add_employee (const std::string& first_name,
@@ -17,7 +18,7 @@ namespace Records {
                 return employee;
             }
         }
-        throw logic_error { "No employees found!"};
+        throw std::logic_error { "No employees found!"};
     }
     Employee& Database::get_employee (const std::string& first_name,
                                     const std::string& last_name) {
@@ -27,7 +28,7 @@ namespace Records {
                 return employee;
             }
         }
-        throw logic_error { "No employees found!"};
+        throw std::logic_error { "No employees found!"};
     }
 
     void Database::display_all() const{
