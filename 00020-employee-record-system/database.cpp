@@ -29,4 +29,10 @@ namespace Records {
         }
         throw logic_error { "No employees found!"};
     }
+
+    void Database::display_all() const{
+        for (const auto& employee : m_employees) {
+            employee.display();
+        }
+    }
 }
