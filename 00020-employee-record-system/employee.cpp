@@ -11,7 +11,7 @@ namespace Records {
         set_salary (get_salary() + raise_amount);
     }
     void Employee::demote (int demerit_amount) {
-        set_salary (get_salary - demerit_amount);
+        set_salary (get_salary() - demerit_amount);
     }
 
     void Employee::hire() {m_hired = true;}
