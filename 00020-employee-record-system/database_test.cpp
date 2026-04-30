@@ -15,4 +15,11 @@ auto main() -> int {
     Employee& emp3 {my_db.add_employee ("John", "Doe")};
     emp3.set_salary (100'000);
     emp3.promote();
+
+    println("All Employees:");
+    my_db.display_all();
+    println("Current Employees:");
+    my_db.display_current();
+    println("Former Employees:");
+    my_db.display_former();
 }
