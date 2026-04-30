@@ -35,4 +35,12 @@ namespace Records {
             employee.display();
         }
     }
+
+    void Database::display_current() const {
+        for (const auto& employee : m_employees) {
+            if (employee.is_hired()){
+                employee.display();
+            }
+        }
+    }
 }
