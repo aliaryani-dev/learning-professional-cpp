@@ -50,7 +50,7 @@ int display_menu() {
     int selection;
     println("");
     println("Employee Database");
-    println("------------------------------")
+    println("------------------------------");
     println("1) Hire a new employee");
     println("2) fire an employee");
     println("3) promote an employee");
@@ -71,7 +71,7 @@ void do_hire(Database& db) {
     print("Last name? --> ");
     cin >> last_name;
 
-    auto& Employee {db.add_employee (first_name, last_name)};
+    auto& employee {db.add_employee (first_name, last_name)};
     println("Hired employee : {}, {} with employee number : {}",
             last_name, first_name, employee.get_employee_number());
 }
